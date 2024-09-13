@@ -8,6 +8,10 @@
       "ghcr.io/devcontainers/features/python:1": {
         "installTools": true,
         "version": "3.11"
+      },		
+      "ghcr.io/devcontainers/features/rust:1": {
+        "version": "latest",
+        "profile": "minimal"
       },
       "ghcr.io/devcontainers-contrib/features/poetry:2": {
         "version": "latest"
@@ -93,5 +97,5 @@
         ]
       }
     },
-    "onCreateCommand": "poetry install"
+    "onCreateCommand": "git submodule update --init --recursive && rustup default nightly && pip install maturin && poetry install"
   }
