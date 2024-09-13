@@ -1,0 +1,6 @@
+data/**/*
+castep_keywords.json
+data_old/**/*
+/**/__pycache__/**/*
+.vscode/**
+.DS_Store
